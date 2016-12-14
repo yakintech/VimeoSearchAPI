@@ -1,0 +1,12 @@
+<div>
+	<h2>{{title}}</h2>	
+	<iframe src="//player.vimeo.com/video/{{videoid}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<input onclick="getiframe(this)" type="button" value="iframe" id="{{iframeid}}">
+</div>
+<script>
+	function getiframe(response){
+		var item = $(response).attr('id');
+		$('#iframeIdContent').empty();
+		$('#iframeIdContent').append(item);
+	}
+</script>
